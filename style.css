@@ -20,6 +20,7 @@
 body{
 	background-color: #1A5B35;
 	margin: 0;
+	overflow-x: hidden;
 }
 .right-top{
 	position: absolute;
@@ -70,7 +71,7 @@ body{
 	display: flex;
 	text-align: center;
 	justify-content: center;
-	
+	margin-left: 70px;
 }
 .sign span{
 	font-family: 'Gilroy-Light';
@@ -90,15 +91,15 @@ body{
 }
 /*ДЗ 04.02.2022*/
 
-@media screen and (max-width: 340px){
+@media screen and (max-width: 440px){
 
-	.right-top, .left-bottom, .music {
+	.right-top, .left-bottom {
 		display: none;
 	} 
 	.music{
-		position: absolute;
-		left: 0;
-    	top: 0;
+		position: relative;
+		left: 270px;
+		top: -47px;
 	}
 	.left-top{
 		width: 89px;
@@ -117,8 +118,9 @@ body{
 		font-size: 16px;
 
 	}
+}
 	.logo{
-		margin-left: 130px;
+		margin-left: 145px;
 		margin-top: 30px;
 	}
 @media print{
@@ -135,4 +137,4 @@ body{
 		color: black;
 	}
 }
-@media (max-width: 340px) { ... }
+/*@media (max-width: 340px) { ... }*/
